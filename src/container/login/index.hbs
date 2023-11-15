@@ -9,7 +9,7 @@
 	</header>
 
 	<form class="page__section">
-		<h1 class="page__title">Реєстрація</h1>
+		<h1 class="page__title">Вхід</h1>
 
 		<div class="form">
 			<div class="form__item">
@@ -23,28 +23,13 @@
 				name="password" }}
 				<span name="password" class="form__error">Помилка</span>
 			</div>
-			<div class="form__item">
-				{{> field-password action="singnupForm.change" label="Пароль ще раз" placeholder="Введіть пароль"
-				type="password"
-				name="passwordAgain" }}
-				<span name="passwordAgain" class="form__error">Помилка</span>
-			</div>
-			<div class="form__item">
-				{{> field-select action="singnupForm.change" label="Роль"
-				name="role" placeholder="Оберіть роль" list=data.role}}
-				<span name="role" class="form__error">Помилка</span>
-			</div>
-			<div class="form__item">
-				{{> field-checkbox action="singnupForm.change" label="Ви погоджуєтеся з правилами сервіса"
-				name="isConfirm" }}
-				<span name="isConfirm" class="form__error">Помилка</span>
-			</div>
 		</div>
 		<button onclick="signupForm.submit()" class="button button--disabled" type="button">Зареєструватись</button>
 
+		<span class="alert alert--disabled">Увійти</span>
 		<span class="alert alert--disabled">Увага, помилка!</span>
 
-		<span class="link_prefix">Маєте акаунт? <a href="/login" class="link">Увійти</a></span>
+		<span class="link_prefix">Забули пароль? <a href="/recovery" class="link">Відновити</a></span>
 	</form>
 </div>
 
